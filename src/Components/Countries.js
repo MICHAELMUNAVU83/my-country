@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getCountriesApi } from '../redux/countries';
 
 function Countries() {
@@ -22,6 +23,7 @@ function Countries() {
         POPULATION:
         {country.population.toLocaleString() }
       </p>
+      <Link to="/details">details</Link>
     </div>
   ));
   return <div>{renderCountry}</div>;
