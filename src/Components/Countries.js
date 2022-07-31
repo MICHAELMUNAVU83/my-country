@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Countries() {
   return (
     <div>Countries</div>
-  )
+  );
 }
 
-export default Countries
+export default Countries;
