@@ -9,7 +9,22 @@ function Countries() {
   useEffect(() => {
     dispatch(getCountriesApi());
   }, [dispatch]);
-  return <div>Countries</div>;
+  const renderCountry = countries.map((country) => (
+    <div className="big" key={country.name.common}>
+      <img src={country.flags.png} alt="flag" />
+      <p>
+        {' '}
+        COUNTRY:
+        {country.name.common}
+      </p>
+      <p>
+        {' '}
+        POPULATION:
+        {country.population.toLocaleString() }
+      </p>
+    </div>
+  ));
+  return <div>{renderCountry}</div>;
 }
 
 export default Countries;
