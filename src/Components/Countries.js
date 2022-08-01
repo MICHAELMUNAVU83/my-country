@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
-import { getCountriesApi } from '../redux/countries';
+import { getCountriesApi, getSearchedCountries } from '../redux/countries';
 
 function Countries() {
   const countries = useSelector((state) => state.countries);
@@ -11,6 +11,20 @@ function Countries() {
   useEffect(() => {
     dispatch(getCountriesApi());
   }, [dispatch]);
+  const [search, setSearch] = useState('');
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+  const handleSearch = (e) => {
+    e.preventDefault();
+    dispatch(getSearchedCountries(search));
+  };
+  const showAll = (e) => {
+    e.preventDefault();
+    dispatch(getCountriesApi());
+    setSearch('');
+  };
+
   const renderCountry = countries.map((country) => (
     <div className="big" key={country.name.common}>
       <Link to="/details" className="more-details">
@@ -21,9 +35,7 @@ function Countries() {
 
       <img className="flag" src={country.flags.png} alt="flag" />
       <div className="name-population">
-        <p>
-          {country.name.common}
-        </p>
+        <p>{country.name.common}</p>
         <p>
           {' '}
           POPULATION:
@@ -32,7 +44,28 @@ function Countries() {
       </div>
     </div>
   ));
-  return <div className="all-countries">{renderCountry}</div>;
+  return (
+    <div>
+      <div>
+        <input
+          placeholder="search country"
+          onChange={handleChange}
+          value={search}
+        />
+        <button type="button" onClick={handleSearch}>
+          SEARCH
+        </button>
+        <button
+          type="button"
+          onClick={showAll}
+        >
+          SEE ALL
+        </button>
+      </div>
+
+      <div className="all-countries">{renderCountry}</div>
+    </div>
+  );
 }
 
 export default Countries;
