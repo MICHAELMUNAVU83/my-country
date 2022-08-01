@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { FaChevronCircleLeft } from 'react-icons/fa';
 import { getCountriesApi } from '../redux/countries';
 
 function Details() {
@@ -14,7 +13,7 @@ function Details() {
   const index = countries.findIndex((item) => item.name.common === name);
 
   return (
-    <div>
+    <div className="details-container">
       <img
         className="card-img-top"
         id="coat"
@@ -45,7 +44,7 @@ function Details() {
         Timezone :
         {countries[index].timezones}
       </p>
-      <Link to="/"><FaChevronCircleLeft /></Link>
+      <Link to="/"><button type="button" className="btn btn-danger btn-lg">BACK</button></Link>
     </div>
   );
 }
