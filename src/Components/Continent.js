@@ -15,9 +15,8 @@ const Continent = () => (
       <Carousel.Item>
         <img
           src={africa}
-          className="d-block w-100"
+          className="d-block"
           alt="stock"
-          style={{ height: '50vh' }}
         />
         <Carousel.Caption>
           <h3>AFRICA</h3>
@@ -26,9 +25,8 @@ const Continent = () => (
       <Carousel.Item>
         <img
           src={asia}
-          className="d-block w-100"
+          className="d-block"
           alt="stock"
-          style={{ height: '50vh' }}
         />
         <Carousel.Caption>
           <h3>ASIA</h3>
@@ -37,9 +35,8 @@ const Continent = () => (
       <Carousel.Item>
         <img
           src={europe}
-          className="d-block w-100"
+          className="d-block"
           alt="stock"
-          style={{ height: '50vh' }}
         />
         <Carousel.Caption>
           <h3>EUROPE</h3>
@@ -48,9 +45,8 @@ const Continent = () => (
       <Carousel.Item>
         <img
           src={australia}
-          className="d-block w-100"
+          className="d-block"
           alt="stock"
-          style={{ height: '50vh' }}
         />
         <Carousel.Caption>
           <h3>AUSTRALIA</h3>
@@ -60,8 +56,7 @@ const Continent = () => (
         <img
           src={north}
           alt="stock2"
-          className="d-block w-100"
-          style={{ height: '50vh' }}
+          className="d-block"
         />
         <Carousel.Caption>
           <h3>NORTH AMERICA</h3>
@@ -71,8 +66,7 @@ const Continent = () => (
         <img
           src={south}
           alt="stock4"
-          className="d-block w-100"
-          style={{ height: '50vh' }}
+          className="d-block"
         />
         <Carousel.Caption>
           <h3>SOUTH AMERICA</h3>
