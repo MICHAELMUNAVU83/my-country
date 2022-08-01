@@ -37,3 +37,57 @@
     transform: rotate(360deg);
   }
 }
+
+.all-countries {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  background-color: rgb(255, 120, 142);
+}
+
+.big {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 3px solid rgb(255, 80, 109);
+  background-color: rgb(255, 120, 142);
+}
+
+.flag {
+  width: 15rem;
+  height: 10rem;
+}
+
+.name-population {
+  text-align: right;
+}
+
+.more-details {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.4rem;
+  color: white;
+}
+
+@media only screen and (max-width: 540px) {
+  .big {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid rgb(255, 80, 109);
+    background-color: rgb(255, 120, 142);
+  }
+
+  .flag {
+    width: 12rem;
+    height: 8rem;
+    flex-grow: 4;
+  }
+
+  .all-countries {
+    background-color: rgb(255, 120, 142);
+  }
+}
+
+
+
