@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Mouse+Memoirs&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab&display=swap');
+
 .App {
   text-align: center;
 }
@@ -41,40 +42,44 @@
 
 .all-countries {
   display: grid;
-  grid-template-columns: repeat(2,  1fr);
-  background-color: #FA0491;
-  padding-left:7%;
-
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fa0491;
+  padding-left: 7%;
 }
-.image-links{
+
+.image-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.more-details{
+
+.more-details {
   text-decoration: none;
 }
+
 .big {
- display: flex;
- flex-direction: column;
- color: white;
- text-decoration: none;
- background-color:#da007b;
- width: 28rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+  background-color: #da007b;
+  width: 28rem;
   height: 18rem;
- margin-left: 20px;
- margin-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
-.big:hover{
+
+.big:hover {
   color: whitesmoke;
 }
 
 #search {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color:  #FA0491;
+  background-color: #fa0491;
 }
-.d-block{
+
+.d-block {
   width: 100%;
   height: 50vh;
 }
@@ -94,9 +99,10 @@
   height: 40%;
   width: 30%;
 }
-.details-container{
+
+.details-container {
   height: 100vh;
-  background-color: #FA0491;
+  background-color: #fa0491;
   color: white;
   font-size: 25px;
   font-family: 'Crete Round', serif;
@@ -105,10 +111,10 @@
 @media only screen and (max-width: 740px) {
   .big {
     width: 100%;
-    height:12rem;
+    height: 12rem;
     margin-left: 0;
-    
   }
+
   .flag {
     width: 100%;
     height: 8rem;
@@ -119,12 +125,14 @@
     padding: 0;
     margin: 0;
     grid-template-columns: repeat(2, minmax(50%, 1fr));
-    background-color: #FA0491;
+    background-color: #fa0491;
   }
+
   .name-population {
     text-align: right;
     font-size: 12px;
   }
+
   #coat {
     height: 15%;
     width: 15%;
@@ -135,5 +143,3 @@
   width: 100px;
   height: 100px;
 }
-
-
