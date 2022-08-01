@@ -12,21 +12,22 @@ function Countries() {
   }, [dispatch]);
   const renderCountry = countries.map((country) => (
     <div className="big" key={country.name.common}>
-      <img src={country.flags.png} alt="flag" />
-      <p>
-        {' '}
-        COUNTRY:
-        {country.name.common}
-      </p>
-      <p>
-        {' '}
-        POPULATION:
-        {country.population.toLocaleString() }
-      </p>
       <Link to="/details">details</Link>
+
+      <img className="flag" src={country.flags.png} alt="flag" />
+      <div className="name-population">
+        <p>
+          {country.name.common}
+        </p>
+        <p>
+          {' '}
+          POPULATION:
+          {country.population.toLocaleString()}
+        </p>
+      </div>
     </div>
   ));
-  return <div>{renderCountry}</div>;
+  return <div className="all-countries">{renderCountry}</div>;
 }
 
 export default Countries;
