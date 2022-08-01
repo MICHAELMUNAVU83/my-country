@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { getCountriesApi, getSearchedCountries } from '../redux/countries';
+import Continent from './Continent';
 
 function Countries() {
   const countries = useSelector((state) => state.countries);
@@ -46,6 +47,7 @@ function Countries() {
   ));
   return (
     <div>
+      <Continent />
       <div>
         <input
           placeholder="search country"

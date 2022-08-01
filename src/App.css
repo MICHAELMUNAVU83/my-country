@@ -88,6 +88,10 @@
     background-color: rgb(255, 120, 142);
   }
 }
+.logo{
+  width: 100px;
+  height: 100px;
+}
 
 #coat {
   height: 50px;
