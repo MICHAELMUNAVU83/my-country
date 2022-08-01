@@ -3,6 +3,11 @@ import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import africa from '../assets/africa.png';
+import europe from '../assets/europe.png';
+import asia from '../assets/asia.png';
+import australia from '../assets/australia.png';
+import north from '../assets/north.png';
+import south from '../assets/south.png';
 
 const Continent = () => (
   <div style={{ overflow: 'none' }}>
@@ -15,68 +20,62 @@ const Continent = () => (
           style={{ height: '50vh' }}
         />
         <Carousel.Caption>
-          <h3>Check accurate coin data 💯</h3>
-          <p>We provide accurate coin data all over the world.</p>
+          <h3>AFRICA</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={africa}
+          src={asia}
           className="d-block w-100"
           alt="stock"
           style={{ height: '50vh' }}
         />
         <Carousel.Caption>
-          <h3>Check accurate coin data 💯</h3>
-          <p>We provide accurate coin data all over the world.</p>
+          <h3>ASIA</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={africa}
+          src={europe}
           className="d-block w-100"
           alt="stock"
           style={{ height: '50vh' }}
         />
         <Carousel.Caption>
-          <h3>Check accurate coin data 💯</h3>
-          <p>We provide accurate coin data all over the world.</p>
+          <h3>EUROPE</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={africa}
+          src={australia}
           className="d-block w-100"
           alt="stock"
           style={{ height: '50vh' }}
         />
         <Carousel.Caption>
-          <h3>Check accurate coin data 💯</h3>
-          <p>We provide accurate coin data all over the world.</p>
+          <h3>AUSTRALIA</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={africa}
+          src={north}
           alt="stock2"
           className="d-block w-100"
           style={{ height: '50vh' }}
         />
         <Carousel.Caption>
-          <h3>Check data of all coins 😇</h3>
-          <p>We provide data about all coins</p>
+          <h3>NORTH AMERICA</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={africa}
+          src={south}
           alt="stock4"
           className="d-block w-100"
           style={{ height: '50vh' }}
         />
         <Carousel.Caption>
-          <h3>We record changes every minute👌</h3>
-          <p>We provide all crypto changes every minute</p>
+          <h3>SOUTH AMERICA</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
