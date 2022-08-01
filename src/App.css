@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Mouse+Memoirs&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab&display=swap');
 .App {
   text-align: center;
 }
@@ -86,6 +87,7 @@
 .name-population {
   text-align: right;
   font-size: 20px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 #coat {
@@ -96,13 +98,14 @@
   height: 100vh;
   background-color: #FA0491;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Crete Round', serif;
 }
 
 @media only screen and (max-width: 740px) {
   .big {
     width: 100%;
-    height:16rem;
+    height:12rem;
     margin-left: 0;
     
   }
@@ -117,6 +120,14 @@
     margin: 0;
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     background-color: #FA0491;
+  }
+  .name-population {
+    text-align: right;
+    font-size: 12px;
+  }
+  #coat {
+    height: 15%;
+    width: 15%;
   }
 }
 

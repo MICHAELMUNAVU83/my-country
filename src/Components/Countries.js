@@ -6,7 +6,6 @@ import Continent from './Continent';
 
 function Countries() {
   const countries = useSelector((state) => state.countries);
-  console.log(countries);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCountriesApi());
