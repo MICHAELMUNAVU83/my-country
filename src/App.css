@@ -88,3 +88,8 @@
     background-color: rgb(255, 120, 142);
   }
 }
+
+#coat {
+  height: 50px;
+  width: 50px;
+}

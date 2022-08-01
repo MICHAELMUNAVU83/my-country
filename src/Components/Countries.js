@@ -27,7 +27,7 @@ function Countries() {
 
   const renderCountry = countries.map((country) => (
     <div className="big" key={country.name.common}>
-      <Link to="/details" className="more-details">
+      <Link to={`/details/${country.name.common}`} className="more-details">
         {' '}
         <FaArrowAltCircleRight />
         {' '}
