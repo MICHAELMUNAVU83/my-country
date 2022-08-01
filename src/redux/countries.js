@@ -9,12 +9,17 @@ export const getCountriesApi = createAsyncThunk('getting Api from countries', as
   console.log(countryData);
   return countryData;
 });
+export const getSearchedCountries = createAsyncThunk('getting searched', async (name) => {
+  const searchedCountries = await axios.get(`https://restcountries.com/v3.1/name/${name}`).catch((error) => error);
+  return searchedCountries.data;
+});
 
 const countriesSlice = createSlice({
   name: 'countries',
   initialState,
   extraReducers: {
     [getCountriesApi.fulfilled]: (state, action) => action.payload,
+    [getSearchedCountries.fulfilled]: (state, action) => action.payload,
 
   },
 });
