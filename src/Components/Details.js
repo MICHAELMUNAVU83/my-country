@@ -11,11 +11,10 @@ function Details() {
   }, [dispatch]);
   const { name } = useParams();
   const index = countries.findIndex((item) => item.name.common === name);
-  console.log(index);
-  console.log(name);
+
   return (
     <div>
-      Details
+      {countries[index].name.common}
       <Link to="/">back</Link>
 
     </div>
