@@ -89,6 +89,11 @@
   }
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
 #coat {
   height: 50px;
   width: 50px;
