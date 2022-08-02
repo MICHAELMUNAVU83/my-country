@@ -13,7 +13,7 @@ function Details() {
   const index = countries.findIndex((item) => item.name.common === name);
 
   return (
-    <div className="details-container">
+    <div className="details-container" data-testid="detailsdiv">
       <img
         className="card-img-top"
         id="coat"
@@ -21,7 +21,7 @@ function Details() {
         alt="Card cap"
       />
       <p className="card-text">
-        COUNTRY :
+        COUNTRY NAME :
         {countries[index].name.common}
       </p>
       <p className="card-text">
@@ -30,15 +30,15 @@ function Details() {
       </p>
       <p className="card-text">
         POPULATION :
-        {countries[index].population}
+        {countries[index].population.toLocaleString()}
       </p>
       <p className="card-text">
-        CAPITAL :
+        CAPITAL CITY :
         {countries[index].capital}
       </p>
       <p className="card-text">
-        AREA :
-        {countries[index].area}
+        AREA IN SQ METRES :
+        {countries[index].area.toLocaleString()}
       </p>
       <p className="card-text">
         Timezone :
