@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Mouse+Memoirs&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Mouse+Memoirs&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&family=Roboto+Slab&display=swap');
 .App {
   text-align: center;
 }
@@ -92,7 +91,7 @@
 .name-population {
   text-align: right;
   font-size: 20px;
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 #coat {
@@ -105,18 +104,20 @@
   height: 100%;
   color: white;
   font-size: 25px;
-  font-family: 'Crete Round', serif;
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   align-content: space-between;
 }
-.imagedetails{
+
+.imagedetails {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.breakdown{
+
+.breakdown {
   background-color: #8d0050;
 }
 
@@ -139,10 +140,12 @@
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     background-color: #fa0491;
   }
-  .imagedetails{
-    margin-bottom: 10px;
+
+  .imagedetails {
+    margin-bottom: 5px;
   }
-  .imagedetails a{
+
+  .imagedetails a {
     color: white;
   }
 
@@ -150,17 +153,25 @@
     text-align: right;
     font-size: 12px;
   }
-  .details-nav{
+
+  .details-nav {
     display: flex;
     justify-content: space-between;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 10px;
   }
-  .details-container{
+
+  .details-container {
     height: 100vh;
   }
-  .details-nav a{
+  .noto{
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .details-nav a {
     color: white;
   }
-  
+
   #coat {
     height: 60%;
     width: 30%;

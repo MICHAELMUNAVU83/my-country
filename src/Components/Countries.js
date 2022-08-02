@@ -30,8 +30,8 @@ function Countries() {
 
         <img className="flag" src={country.flags.png} alt="flag" />
         <div className="name-population">
-          <p className="name-p">{country.name.common.toUpperCase()}</p>
-          <p className="name-p">
+          <p className="name-p noto">{country.name.common.toUpperCase()}</p>
+          <p className="name-p noto">
             {' '}
             POPULATION:
             {country.population.toLocaleString()}
