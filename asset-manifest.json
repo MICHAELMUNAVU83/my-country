@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-country/static/css/main.eb972bed.css",
+    "main.js": "/my-country/static/js/main.b480cd95.js",
+    "static/js/787.f7c9f6df.chunk.js": "/my-country/static/js/787.f7c9f6df.chunk.js",
+    "static/media/europe.png": "/my-country/static/media/europe.6cdc79b78ac1899b4abd.png",
+    "static/media/north.png": "/my-country/static/media/north.e8e419773efbb725b029.png",
+    "static/media/asia.png": "/my-country/static/media/asia.e462e26aa5a1dc378201.png",
+    "static/media/south.png": "/my-country/static/media/south.02305c861c5ea0c89f86.png",
+    "static/media/africa.png": "/my-country/static/media/africa.77c0471b2b54465625e5.png",
+    "static/media/australia.png": "/my-country/static/media/australia.51dd1cac9d2975512763.png",
+    "index.html": "/my-country/index.html",
+    "main.eb972bed.css.map": "/my-country/static/css/main.eb972bed.css.map",
+    "main.b480cd95.js.map": "/my-country/static/js/main.b480cd95.js.map",
+    "787.f7c9f6df.chunk.js.map": "/my-country/static/js/787.f7c9f6df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb972bed.css",
+    "static/js/main.b480cd95.js"
+  ]
+}
