@@ -13,7 +13,7 @@ function Details() {
   const index = countries.findIndex((item) => item.name.common === name);
 
   return (
-    <div className="details-container">
+    <div className="details-container" data-testid="detailsdiv">
       <img
         className="card-img-top"
         id="coat"
