@@ -17,7 +17,9 @@ This is a react web app where users can look up and see details about their coun
 
 ## Demo Video
 
-[Video-Demo] (https://www.loom.com/share/77c88a658fe444fe9854242fbefd0d1a/)
+
+[Demo Video](https://www.loom.com/share/77c88a658fe444fe9854242fbefd0d1a/)
+
 
 
 
@@ -25,6 +27,8 @@ This is a react web app where users can look up and see details about their coun
 
 To get a local copy up and running follow these simple example steps.
 Clone this repository [clone](https://github.com/MICHAELMUNAVU83/my-country.git)
+cd my-country
+Run npm install
 Run npm start
 
 ## Authors
