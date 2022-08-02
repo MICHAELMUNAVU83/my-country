@@ -37,7 +37,7 @@ function Details() {
         {countries[index].capital}
       </p>
       <p className="card-text">
-        AREA IN SQ METRES :
+        AREA IN SQUARE METRES :
         {countries[index].area.toLocaleString()}
       </p>
       <p className="card-text">
