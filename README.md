@@ -13,7 +13,7 @@ This is a react web app where users can look up and see details about their coun
 
 ## Live Demo 
 
-[Live  Link](https://sunny-rabanadas-0cd377.netlify.app/)
+[Live  Link](https://snazzy-peony-ce2078.netlify.app/)
 
 ## Demo Video
 
